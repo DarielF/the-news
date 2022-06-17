@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<div>
+  <mat-form-field *ngFor= "let article of articles">
+    <mat-card>
+      <mat-card-title>{{article.title}}</mat-card-title>
+      <mat-card-content>
+        <img [src]="article.imageUrl">
+        <p>{{article.summary}}</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-form-field>
+</div>
